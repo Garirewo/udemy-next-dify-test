@@ -3,9 +3,6 @@ import { NextRequest, NextResponse } from "next/server"
 const DIFY_API_KEY = process.env.DIFY_API_WORKFLOW_KEY
 const endpoint = `${process.env.DIFY_API_URL}/workflows/run`
 
-//  const endpoint = "http://localhost/v1/workflows/run"
-// const DIFY_API_KEY = "app-9ex0doEyKrba4t1rvQzwaguV"
-
 export async function POST(request: NextRequest){
     
     try{
