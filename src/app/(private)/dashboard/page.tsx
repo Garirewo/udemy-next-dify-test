@@ -1,9 +1,9 @@
-import { auth } from '@/auth'
+// import { auth } from '@/auth'
 // import UserUsage from '@/components/UserUsage'
 
 export default async function DashboardPage() {
-  const session = await auth()
-  const userId = session?.user?.id as string
+  // const session = await auth()
+  // const userId = session?.user?.id as string
 
   return (
     <div className="max-w-5xl mx-auto p-6">

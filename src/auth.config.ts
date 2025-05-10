@@ -5,7 +5,10 @@ export const authConfig = {
     callbacks: {
         authorized({ auth, request: { nextUrl } }) { // authはユーザーセッションが含まれる
             const isLoggedIn = !!auth?.user; // ユーザーがログインしているか
-            const isOnDashboard = nextUrl.pathname.startsWith('/dashboard') || nextUrl.pathname.startsWith('/manage')
+            const isOnDashboard = 
+            nextUrl.pathname.startsWith('/dashboard')
+            || nextUrl.pathname.startsWith('/manage')
+            || nextUrl.pathname.startsWith('/chat')
             if (isOnDashboard) {
                 if (isLoggedIn) return true;
                 return Response.redirect(new URL('/login', nextUrl)); // ログインしてなければloginページにリダイレクト
