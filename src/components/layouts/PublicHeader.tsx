@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-legacy-behavior */
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-legacy-behavior */
 import Link from 'next/link'
 import {
     NavigationMenu,
@@ -17,7 +18,7 @@ export default async function PrivateHeader() {
         <NavigationMenu>
             <NavigationMenuList>
                 <NavigationMenuItem>
-                    <Link href="/dashboard" legacyBehavior passHref>
+                    <Link href="/dashboard" legacyBehavior passHref >
                         <NavigationMenuLink className="font-bold text-xl">
                         管理ページ
                         </NavigationMenuLink>
