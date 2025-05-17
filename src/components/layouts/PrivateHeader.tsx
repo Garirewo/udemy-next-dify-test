@@ -17,13 +17,13 @@ export default async function PrivateHeader() {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <NavigationMenu>
             <NavigationMenuList>
-                <NavigationMenuItem>
-                    <Link href="/dashboard" legacyBehavior passHref >
-                        <NavigationMenuLink className="font-bold text-xl">
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                    <Link href="/dashboard" className="font-bold text-xl">
                         管理ページ
-                        </NavigationMenuLink>
                     </Link>
-                </NavigationMenuItem>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
             </NavigationMenuList>
         </NavigationMenu>
         <Setting session={session} />

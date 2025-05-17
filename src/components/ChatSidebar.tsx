@@ -75,11 +75,11 @@ export default function ChatSidebar({userId}: ChatProps) {
                   className={`
                     flex items-center p-2 my-2 text-sm rounded-lg hover:bg-slate-200
                     ${conversationId === conversation.id ? 'bg-slate-200' : '' }`}
-                  legacyBehavior>
-                      <div className="flex-1">
-                        <p className="truncate font-medium">{conversation.name}</p>
-                      </div>
-                    </Link>
+                  >
+                    <div className="flex-1">
+                      <p className="truncate font-medium">{conversation.name}</p>
+                    </div>
+                </Link>
               </li>
             ))}
           </ul>
