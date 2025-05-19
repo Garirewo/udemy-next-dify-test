@@ -1,7 +1,8 @@
 import { PrismaClient } from '@prisma/client'
+
 // グローバルスコープでPrismaインスタンスを保持できる場所を作る
 const globalForPrisma = globalThis as unknown as {
- prisma: PrismaClient | undefined
+  prisma: PrismaClient | undefined
 }
 // Prismaインスタンスがあれば使う、なければ作成
 export const prisma = globalForPrisma.prisma ?? new PrismaClient()

@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { useChatStore } from "@/store/chatStore"
 import { useRouter } from "next/navigation"
 import { toast } from "sonner"
-import { Toaster } from "sonner"
+import { Toaster } from "@/components/ui/sonner"
 
 export default function ChatInput({ userId }: ChatProps) {
   const [input, setInput ] = useState('')
