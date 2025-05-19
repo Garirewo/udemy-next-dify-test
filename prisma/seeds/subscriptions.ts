@@ -1,5 +1,18 @@
 import { prisma } from '../../src/lib/prisma'
-import { PlanType, SubscriptionStatus} from "@prisma/client";
+// import { PlanType, SubscriptionStatus} from "@prisma/client";
+
+export const PlanType = {
+    FREE: "FREE",
+    PRO: "PRO"
+  } as const;
+   
+  export const SubscriptionStatus = {
+    ACTIVE: "ACTIVE",
+    CANCELED: "CANCELED",
+    EXPIRED: "EXPIRED",
+    TRIAL: "TRIAL",
+    UNPAID: "UNPAID"
+  } as const;
 
 export async function seedSubscriptions() {
   // ユーザー情報を取得
